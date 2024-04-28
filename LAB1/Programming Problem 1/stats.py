@@ -1,51 +1,30 @@
-def calculate_mean(numbers):
-    
-    if not numbers:
-        return 0
-    return sum(numbers) / len(numbers)
+# Programming Problem 1
+# stats.py
 
-def calculate_median(numbers):
-    
-    if not numbers:
-        return 0
-    
-    numbers.sort()
-    midpoint = len(numbers) // 2
-
-    if len(numbers) % 2 == 1:
-        return numbers[midpoint]
+def MEDIAN(numbers):
+    median = sorted(numbers)
+    n = len(median)
+    if n % 2 == 0:
+        # Even number of elements
+        mid_1 = n // 2
+        mid_2 = mid_1 - 1
+        return (median[mid_2] + median[mid_1]) / 2
     else:
-        return (numbers[midpoint] + numbers[midpoint - 1]) / 2
+        # Odd number of elements
+        return median[n // 2]
 
-def calculate_mode(words):
-    if not words:
-        return 0
-    
-    # Count occurrences of each word
-    word_counts = {}
-    for word in words:
-        count = word_counts.get(word, None)
-        if count is None:
-            word_counts[word] = 1
-        else:
-            word_counts[word] = count + 1
+def MODE(numbers):
+    mode = max(numbers, key = numbers.count)
+    return mode
 
-    # Find the maximum count
-    max_count = max(word_counts.values())
+def MEAN(numbers):
+    mean = sum(numbers)/len(numbers)
+    return mean
 
-    # Find words with maximum count (modes)
-    modes = [key for key in word_counts if word_counts[key] == max_count]
-    
-    return modes
+# test run for odd number of elements = [10, 8, 5, 5, 6, 7, 5, 11, 4, 9, 3][2, 4, 6, 5, 5, 3]
+numbers = [10, 8, 5, 5, 6, 7, 5, 11, 4, 9, 3]
 
-def main():
-    # Test the statistical functions with a given list
-    test_numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-    test_words = ["apple", "banana", "apple", "orange", "banana", "grape"]
+print("Median:", MEDIAN(numbers))
+print("Mode:", MODE(numbers))
+print("Mean:", MEAN(numbers))
 
-    print("Mean:", calculate_mean(test_numbers))
-    print("Median:", calculate_median(test_numbers))
-    print("Mode:", calculate_mode(test_words))
-
-if __name__ == "__main__":
-    main()
