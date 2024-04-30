@@ -34,3 +34,4 @@ CREATE TABLE "Class" (
 	"LastName"	TEXT,
 	"FirstName"	TEXT)
 );
+COMMIT;
