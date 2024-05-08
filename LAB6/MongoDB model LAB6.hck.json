@@ -1,0 +1,563 @@
+{
+    "modelName": "New Model",
+    "collections": [
+        {
+            "collectionName": "POSTLAB_LAB6.albums",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "_id",
+                    "isActivated": true,
+                    "type": "objectId",
+                    "primaryKey": false,
+                    "GUID": "7d99d099-cd74-4ff7-a5fa-27ae0cf8dee9",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "AlbumId",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": true,
+                    "GUID": "9140a4be-4342-48d8-a4a9-edcb16352f9f",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 9,
+                    "error": {},
+                    "childRelationships": [
+                        "4540ad64-f975-4812-9e4b-83fe29eff76e"
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "Title",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "d907bd40-7591-4b5e-837d-76f08685c2e3",
+                    "required": true,
+                    "sample": "Plays Metallica By Four Cellos",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "ArtistId",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "888c6b96-5f6e-4088-8c8c-f299c7fcc3b6",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 7,
+                    "foreignCollection": "7baafd28-0ab8-43e1-a795-d6cda488ade7",
+                    "foreignField": [
+                        "7baafd28-0ab8-43e1-a795-d6cda488ade7",
+                        "b9edfa0c-41b4-4626-bc08-52075d32eb80"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "a882f890-580e-4493-92a2-e658bf4a5ee6",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "106869e4-4480-4639-b003-05a5855803b7",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "bbbb67a3-3bfd-495c-91fe-b99ede48e9ad",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "bucketId": "71998c0f-dba2-429d-8d1b-1e53568e1b87"
+        },
+        {
+            "collectionName": "POSTLAB_LAB6.artists",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "_id",
+                    "isActivated": true,
+                    "type": "objectId",
+                    "primaryKey": false,
+                    "GUID": "249fb4fa-ab86-436f-84b0-cfc4d6a25aa4",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "ArtistId",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": true,
+                    "GUID": "b9edfa0c-41b4-4626-bc08-52075d32eb80",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 10,
+                    "error": {},
+                    "childRelationships": [
+                        "a882f890-580e-4493-92a2-e658bf4a5ee6"
+                    ]
+                },
+                {
+                    "code": "",
+                    "name": "Name",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "a3576ad9-7d0b-46e7-aca4-25148a80f15a",
+                    "required": true,
+                    "sample": "Billy Cobham",
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "7765d4b1-5b65-4583-9f2d-e9821c78523d",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "7baafd28-0ab8-43e1-a795-d6cda488ade7",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "bucketId": "71998c0f-dba2-429d-8d1b-1e53568e1b87"
+        },
+        {
+            "collectionName": "POSTLAB_LAB6.tracks",
+            "type": "object",
+            "properties": [
+                {
+                    "code": "",
+                    "name": "_id",
+                    "isActivated": true,
+                    "type": "objectId",
+                    "primaryKey": false,
+                    "GUID": "30e12a37-c5c9-454a-ade8-bde0acc1db5d",
+                    "required": true,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "TrackId",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": true,
+                    "GUID": "5823c37d-51b4-4931-b71a-bdf2082b9f6a",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 20,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Name",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "401064e5-e635-4b64-8ed0-e42a09ef5228",
+                    "required": true,
+                    "sample": "Overdose",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "AlbumId",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "ccfa1db4-5307-48c7-9b5a-e72b0ee4ed85",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 4,
+                    "foreignCollection": "bbbb67a3-3bfd-495c-91fe-b99ede48e9ad",
+                    "foreignField": [
+                        "bbbb67a3-3bfd-495c-91fe-b99ede48e9ad",
+                        "9140a4be-4342-48d8-a4a9-edcb16352f9f"
+                    ],
+                    "relationshipType": "Foreign Key",
+                    "parentRelationship": "4540ad64-f975-4812-9e4b-83fe29eff76e",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "MediaTypeId",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "a14d91de-e92b-43c8-8434-8287a9e66cb0",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 2,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "GenreId",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "07aa197a-6ba4-4bb1-a174-7a4314e281f9",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 1,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Composer",
+                    "isActivated": true,
+                    "type": "string",
+                    "primaryKey": false,
+                    "GUID": "08457dc2-7079-4565-ab77-d54a8690df7b",
+                    "required": false,
+                    "sample": "AC/DC",
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Milliseconds",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "c1ce4939-da21-4d14-ac8e-47f58eb12876",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 375418,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "Bytes",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "8866b8d5-7849-40dc-a116-da25275fab6e",
+                    "required": true,
+                    "mode": "integer32",
+                    "sample": 12066294,
+                    "error": {}
+                },
+                {
+                    "code": "",
+                    "name": "UnitPrice",
+                    "isActivated": true,
+                    "type": "numeric",
+                    "primaryKey": false,
+                    "GUID": "235f18c2-3598-48e2-8f4e-5625921929c5",
+                    "required": true,
+                    "mode": "double",
+                    "sample": 0.99,
+                    "error": {}
+                }
+            ],
+            "definitions": {
+                "type": "definitions",
+                "GUID": "f2ba7518-5e5d-4cc2-a8c2-5f899b4d181f",
+                "properties": []
+            },
+            "isActivated": true,
+            "additionalProperties": true,
+            "validationLevel": "Off",
+            "validationAction": "Warn",
+            "storageEngineName": "WiredTiger",
+            "collectionUsers": [],
+            "indexes": [],
+            "collation": {},
+            "sharding": {
+                "unique": true,
+                "collation": "null"
+            },
+            "GUID": "c2412907-9290-4fa4-85d3-b73fa742a058",
+            "code": "",
+            "hackoladeMeta": {
+                "validationErrors": {}
+            },
+            "bucketId": "71998c0f-dba2-429d-8d1b-1e53568e1b87"
+        }
+    ],
+    "buckets": [
+        {
+            "name": "POSTLAB_LAB6",
+            "type": "bucket",
+            "collectionIds": [
+                "bbbb67a3-3bfd-495c-91fe-b99ede48e9ad",
+                "7baafd28-0ab8-43e1-a795-d6cda488ade7",
+                "c2412907-9290-4fa4-85d3-b73fa742a058"
+            ],
+            "backgroundColor": {
+                "r": 216,
+                "g": 0,
+                "b": 115,
+                "a": 1
+            },
+            "show": true,
+            "isActivated": true,
+            "GUID": "71998c0f-dba2-429d-8d1b-1e53568e1b87"
+        }
+    ],
+    "views": [],
+    "relationships": [
+        {
+            "name": "fk POSTLAB_LAB6.tracks.AlbumId to POSTLAB_LAB6.albums.AlbumId",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "bbbb67a3-3bfd-495c-91fe-b99ede48e9ad",
+                    "9140a4be-4342-48d8-a4a9-edcb16352f9f"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "c2412907-9290-4fa4-85d3-b73fa742a058",
+                    "ccfa1db4-5307-48c7-9b5a-e72b0ee4ed85"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "1",
+            "GUID": "4540ad64-f975-4812-9e4b-83fe29eff76e",
+            "parentCollection": "bbbb67a3-3bfd-495c-91fe-b99ede48e9ad",
+            "childCollection": "c2412907-9290-4fa4-85d3-b73fa742a058",
+            "hackoladeStyles": {
+                "GUID": "b876baa5-c8ca-419c-8a0b-dc434f5cebbe",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1736.2358642972533,
+                        "y": 1800.9927302100161
+                    },
+                    {
+                        "x": 1765.92084006462,
+                        "y": 1800.9927302100161
+                    },
+                    {
+                        "x": 1765.92084006462,
+                        "y": 1717.6015078082953
+                    },
+                    {
+                        "x": 1795.6058158319868,
+                        "y": 1717.6015078082953
+                    }
+                ],
+                "sides": [
+                    "right",
+                    "left"
+                ]
+            }
+        },
+        {
+            "name": "fk POSTLAB_LAB6.albums.ArtistId to POSTLAB_LAB6.artists.ArtistId",
+            "relationshipType": "Foreign Key",
+            "parentField": [
+                [
+                    "7baafd28-0ab8-43e1-a795-d6cda488ade7",
+                    "b9edfa0c-41b4-4626-bc08-52075d32eb80"
+                ]
+            ],
+            "parentCardinality": "1",
+            "childField": [
+                [
+                    "bbbb67a3-3bfd-495c-91fe-b99ede48e9ad",
+                    "888c6b96-5f6e-4088-8c8c-f299c7fcc3b6"
+                ]
+            ],
+            "isActivated": true,
+            "childCardinality": "1",
+            "GUID": "a882f890-580e-4493-92a2-e658bf4a5ee6",
+            "parentCollection": "7baafd28-0ab8-43e1-a795-d6cda488ade7",
+            "childCollection": "bbbb67a3-3bfd-495c-91fe-b99ede48e9ad",
+            "hackoladeStyles": {
+                "GUID": "1c0cde31-ec01-45d3-8ebb-8ee86886f332",
+                "autoPositioning": true,
+                "type": "Orthogonal",
+                "thickness": 2,
+                "color": "#79c4ff",
+                "dataType": "",
+                "shape": [
+                    {
+                        "x": 1795.6058158319868,
+                        "y": 1683.9348411416288
+                    },
+                    {
+                        "x": 1765.7479806138933,
+                        "y": 1683.9348411416288
+                    },
+                    {
+                        "x": 1765.7479806138933,
+                        "y": 1573.8327948303727
+                    },
+                    {
+                        "x": 1735.8901453958,
+                        "y": 1573.8327948303727
+                    }
+                ],
+                "sides": [
+                    "left",
+                    "right"
+                ]
+            }
+        }
+    ],
+    "users": [],
+    "diagramViews": [],
+    "idToNameHashTable": {
+        "71998c0f-dba2-429d-8d1b-1e53568e1b87": "POSTLAB_LAB6",
+        "7d99d099-cd74-4ff7-a5fa-27ae0cf8dee9": "_id",
+        "9140a4be-4342-48d8-a4a9-edcb16352f9f": "AlbumId",
+        "d907bd40-7591-4b5e-837d-76f08685c2e3": "Title",
+        "888c6b96-5f6e-4088-8c8c-f299c7fcc3b6": "ArtistId",
+        "bbbb67a3-3bfd-495c-91fe-b99ede48e9ad": "POSTLAB_LAB6.albums",
+        "249fb4fa-ab86-436f-84b0-cfc4d6a25aa4": "_id",
+        "b9edfa0c-41b4-4626-bc08-52075d32eb80": "ArtistId",
+        "a3576ad9-7d0b-46e7-aca4-25148a80f15a": "Name",
+        "7baafd28-0ab8-43e1-a795-d6cda488ade7": "POSTLAB_LAB6.artists",
+        "30e12a37-c5c9-454a-ade8-bde0acc1db5d": "_id",
+        "5823c37d-51b4-4931-b71a-bdf2082b9f6a": "TrackId",
+        "401064e5-e635-4b64-8ed0-e42a09ef5228": "Name",
+        "ccfa1db4-5307-48c7-9b5a-e72b0ee4ed85": "AlbumId",
+        "a14d91de-e92b-43c8-8434-8287a9e66cb0": "MediaTypeId",
+        "07aa197a-6ba4-4bb1-a174-7a4314e281f9": "GenreId",
+        "08457dc2-7079-4565-ab77-d54a8690df7b": "Composer",
+        "c1ce4939-da21-4d14-ac8e-47f58eb12876": "Milliseconds",
+        "8866b8d5-7849-40dc-a116-da25275fab6e": "Bytes",
+        "235f18c2-3598-48e2-8f4e-5625921929c5": "UnitPrice",
+        "c2412907-9290-4fa4-85d3-b73fa742a058": "POSTLAB_LAB6.tracks",
+        "4540ad64-f975-4812-9e4b-83fe29eff76e": "fk POSTLAB_LAB6.tracks.AlbumId to POSTLAB_LAB6.albums.AlbumId",
+        "a882f890-580e-4493-92a2-e658bf4a5ee6": "fk POSTLAB_LAB6.albums.ArtistId to POSTLAB_LAB6.artists.ArtistId"
+    },
+    "definitions": {
+        "type": "definitions",
+        "properties": [],
+        "GUID": "88fa2819-5601-4e31-9066-9639608a0c5b"
+    },
+    "polyglotDefinitions": {
+        "type": "polyglotDefinitions",
+        "properties": [],
+        "GUID": "0e2210a6-7159-42f1-8725-90d5e8643ece"
+    },
+    "externalDefinitions": {
+        "type": "externalDefinitions",
+        "properties": [],
+        "GUID": "df2fdcdb-b9b7-46bc-b44f-85359aaae4fa"
+    },
+    "sources": [],
+    "decorativeSymbols": [],
+    "dbVersion": "v7.x",
+    "dbVendor": "MongoDB",
+    "appTarget": "MONGODB",
+    "creationTS": "2024-05-08T08:41:53.602Z",
+    "GUID": "2c4a1178-d2ea-4d74-8ee3-528d8b8922a9",
+    "isLineageEnabled": false,
+    "lastModifTS": "2024-05-08T09:04:07.326Z",
+    "persistenceSchemaVersion": "7",
+    "isCreatedByPlugin": true,
+    "pluginInformation": {
+        "pluginEngineVersion": "1.0.0"
+    },
+    "applicationInformation": {
+        "version": "7.4.0"
+    },
+    "settings": {
+        "centralPane": {
+            "dbLevel": {
+                "erd": [
+                    {
+                        "GUID": "bbbb67a3-3bfd-495c-91fe-b99ede48e9ad",
+                        "x": 1795.6058158319868,
+                        "y": 1650.268174474962,
+                        "width": 251,
+                        "height": 101,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "7baafd28-0ab8-43e1-a795-d6cda488ade7",
+                        "x": 1491.8901453958,
+                        "y": 1532.3327948303727,
+                        "width": 244,
+                        "height": 83,
+                        "color": {}
+                    },
+                    {
+                        "GUID": "c2412907-9290-4fa4-85d3-b73fa742a058",
+                        "x": 1493.2358642972533,
+                        "y": 1696.4927302100161,
+                        "width": 243,
+                        "height": 209,
+                        "color": {}
+                    }
+                ],
+                "erdDefinitions": {
+                    "erd": [],
+                    "rootPath": [],
+                    "entities": [],
+                    "decorativeSymbols": []
+                },
+                "buckets": [
+                    {
+                        "x": 1451.8901453958,
+                        "y": 1492.3327948303727,
+                        "GUID": "71998c0f-dba2-429d-8d1b-1e53568e1b87"
+                    }
+                ],
+                "collapsedNodes": [],
+                "activeRelationship": "",
+                "activeRelationshipFields": {
+                    "childField": [],
+                    "parentField": []
+                },
+                "selectedCollections": [],
+                "displayColorPicker": false,
+                "graphView": {
+                    "erd": [],
+                    "buckets": [],
+                    "decorativeSymbols": [],
+                    "forceLayout": true,
+                    "defaultLinkLength": 300
+                },
+                "diagramViews": [],
+                "decorativeSymbols": [],
+                "nestedCollectionsLayout": "horizontal",
+                "options": [],
+                "relationshipUpdateDisabled": false
+            },
+            "collectionLevel": {},
+            "changed": false
+        },
+        "dtDiagram": {
+            "collapsedNodes": [],
+            "shouldDistributeCollections": false
+        }
+    }
+}

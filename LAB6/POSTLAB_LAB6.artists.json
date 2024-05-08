@@ -1,0 +1,70 @@
+[{
+  "_id": {
+    "$oid": "663b3ea317061aa0bbff7603"
+  },
+  "ArtistId": 1,
+  "Name": "AC/DC"
+},
+{
+  "_id": {
+    "$oid": "663b3ea317061aa0bbff7604"
+  },
+  "ArtistId": 2,
+  "Name": "Accept"
+},
+{
+  "_id": {
+    "$oid": "663b3ea317061aa0bbff7605"
+  },
+  "ArtistId": 3,
+  "Name": "Aerosmith"
+},
+{
+  "_id": {
+    "$oid": "663b3ea317061aa0bbff7606"
+  },
+  "ArtistId": 4,
+  "Name": "Alanis Morissette"
+},
+{
+  "_id": {
+    "$oid": "663b3ea317061aa0bbff7607"
+  },
+  "ArtistId": 5,
+  "Name": "Alice In Chains"
+},
+{
+  "_id": {
+    "$oid": "663b3ea317061aa0bbff7608"
+  },
+  "ArtistId": 6,
+  "Name": "Antônio Carlos Jobim"
+},
+{
+  "_id": {
+    "$oid": "663b3ea317061aa0bbff7609"
+  },
+  "ArtistId": 7,
+  "Name": "Apocalyptica"
+},
+{
+  "_id": {
+    "$oid": "663b3ea317061aa0bbff760a"
+  },
+  "ArtistId": 8,
+  "Name": "Audioslave"
+},
+{
+  "_id": {
+    "$oid": "663b3ea317061aa0bbff760b"
+  },
+  "ArtistId": 9,
+  "Name": "BackBeat"
+},
+{
+  "_id": {
+    "$oid": "663b3ea317061aa0bbff760c"
+  },
+  "ArtistId": 10,
+  "Name": "Billy Cobham"
+}]

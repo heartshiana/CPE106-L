@@ -1,0 +1,72 @@
+[{
+  "_id": {
+    "$oid": "663b3e9d17061aa0bbff75f9"
+  },
+  "AlbumId": 1,
+  "Title": "For Those About To Rock We Salute You",
+  "ArtistId": 1
+},
+{
+  "_id": {
+    "$oid": "663b3e9d17061aa0bbff75fa"
+  },
+  "AlbumId": 2,
+  "Title": "Balls to the Wall",
+  "ArtistId": 2
+},
+{
+  "_id": {
+    "$oid": "663b3e9d17061aa0bbff75fb"
+  },
+  "AlbumId": 3,
+  "Title": "Restless and Wild",
+  "ArtistId": 2
+},
+{
+  "_id": {
+    "$oid": "663b3e9d17061aa0bbff75fc"
+  },
+  "AlbumId": 4,
+  "Title": "Let There Be Rock",
+  "ArtistId": 1
+},
+{
+  "_id": {
+    "$oid": "663b3e9d17061aa0bbff75fd"
+  },
+  "AlbumId": 5,
+  "Title": "Big Ones",
+  "ArtistId": 3
+},
+{
+  "_id": {
+    "$oid": "663b3e9d17061aa0bbff75fe"
+  },
+  "AlbumId": 6,
+  "Title": "Jagged Little Pill",
+  "ArtistId": 4
+},
+{
+  "_id": {
+    "$oid": "663b3e9d17061aa0bbff75ff"
+  },
+  "AlbumId": 7,
+  "Title": "Facelift",
+  "ArtistId": 5
+},
+{
+  "_id": {
+    "$oid": "663b3e9d17061aa0bbff7600"
+  },
+  "AlbumId": 8,
+  "Title": "Warner 25 Anos",
+  "ArtistId": 6
+},
+{
+  "_id": {
+    "$oid": "663b3e9d17061aa0bbff7601"
+  },
+  "AlbumId": 9,
+  "Title": "Plays Metallica By Four Cellos",
+  "ArtistId": 7
+}]
