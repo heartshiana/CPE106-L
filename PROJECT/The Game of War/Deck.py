@@ -1,4 +1,5 @@
-from Card import Card
+from typing import Tuple
+from Card import Card 
 import random
 
 
@@ -14,7 +15,7 @@ class Deck:
     def shuffle(self):
         random.shuffle(self.pile)
 
-    def draw(self) -> (Card, bool):
+    def draw(self) -> Tuple[Card, bool]:  
         if self.pile:  # check if pile is empty
             return self.pile.pop(), True
         return Card(2, 1), False  # Fail soft if pile is empty: return error card
