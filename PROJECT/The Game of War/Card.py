@@ -1,4 +1,6 @@
+#Updated
 rank_dict = {
+    1: "Ace",
     2: "Two",
     3: "Three",
     4: "Four",
@@ -10,15 +12,14 @@ rank_dict = {
     10: "Ten",
     11: "Jack",
     12: "Queen",
-    13: "King",
-    14: "Ace"
+    13: "King"
 }
 
 suit_dict = {
-    1: "Spade",
-    2: "Heart",
-    3: "Clover",
-    4: "Diamond"
+    1: "Spades",
+    2: "Hearts",
+    3: "Clubs",
+    4: "Diamonds"
 }
 
 
